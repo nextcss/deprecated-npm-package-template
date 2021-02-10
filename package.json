@@ -1,6 +1,6 @@
 {
   "name": "@nextcss/npm-package-template",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Next.css modules starter template",
   "license": "MIT",
   "main": "dist/next.css",
