@@ -1,9 +1,9 @@
 {
-  "name": "@nextcss/npm-package-template",
-  "version": "1.0.0",
-  "description": "Next.css modules starter template",
+  "name": "@nextcss/namespace",
+  "version": "0.0.1-beta",
+  "description": "Namespace module for Next.css.",
   "license": "MIT",
-  "main": "dist/next.css",
+  "main": "dist/namespace.css",
   "files": [
     "dist/*"
   ],
@@ -21,15 +21,15 @@
   "funding": "https://paypal.me/toviszsolt",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nextcss/npm-package-template.git"
+    "url": "git+https://github.com/nextcss/namespace.git"
   },
   "bugs": {
-    "url": "https://github.com/nextcss/npm-package-template/issues"
+    "url": "https://github.com/nextcss/namespace/issues"
   },
   "homepage": "https://github.com/nextcss",
   "scripts": {
-    "build": "node-sass --output-style compact src/next.scss dist/next.css",
-    "watch": "node-sass --watch --output-style compact src/next.scss dist/next.css"
+    "build": "node-sass --output-style compact src/namespace.scss dist/next.namespace",
+    "watch": "node-sass --watch --output-style compact src/namespace.scss dist/namespace.css"
   },
   "devDependencies": {
     "node-sass": "^5.0.0"
