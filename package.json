@@ -26,10 +26,12 @@
   "bugs": {
     "url": "https://github.com/nextcss/namespace/issues"
   },
-  "homepage": "https://github.com/nextcss",
+  "homepage": "https://next-css.com",
   "scripts": {
-    "build": "node-sass --output-style compact src/namespace.scss dist/next.namespace",
-    "watch": "node-sass --watch --output-style compact src/namespace.scss dist/namespace.css"
+    "build": "npm run build:dist && npm run build:test",
+    "watch": "node-sass --watch --output-style compact src/namespace.scss dist/namespace.css",
+    "build:dist": "node-sass --output-style compressed src/namespace.scss dist/namespace.css",
+    "build:test": "node-sass --output-style compact src/namespace.scss test/namespace.css"
   },
   "devDependencies": {
     "node-sass": "^5.0.0"
