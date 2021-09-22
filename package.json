@@ -29,11 +29,11 @@
   "homepage": "https://next-css.com",
   "scripts": {
     "build": "npm run build:dist && npm run build:test",
-    "watch": "node-sass --watch --output-style compact src/namespace.scss dist/namespace.css",
-    "build:dist": "node-sass --output-style compressed src/namespace.scss dist/namespace.css",
-    "build:test": "node-sass --output-style compact src/namespace.scss test/namespace.css"
+    "watch": "node-sass --watch --output-style compact --output test/ src/",
+    "build:dist": "node-sass --output-style compressed --output dist/ src/",
+    "build:test": "node-sass --output-style compact --output test/ src/"
   },
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^6.0.1"
   }
 }
